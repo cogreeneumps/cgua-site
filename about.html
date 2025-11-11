@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Columbia Greene Umpires Association</title>
+  <style>
+    /* Reset and basic styles */
+    * { box-sizing: border-box; margin:0; padding:0; font-family: Arial, sans-serif; }
+    body, html { height: 100%; width: 100%; }
+
+    /* Navigation Bar */
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 3;
+      background-color: rgba(0,0,0,0.7);
+    }
+    .navbar ul { list-style:none; display:flex; justify-content:center; gap:30px; padding:15px; }
+    .navbar a { color:white; text-decoration:none; font-weight:bold; font-size:1rem; }
+    .navbar a:hover { color:#ffff88; }
+
+    /* About Us Section */
+    .about-us {
+      position: relative;
+      background: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4NTU3MDI3LWltYWdlLWt3dnhtemE1LmpwZw.jpg') no-repeat center center/cover;
+      color:#333;
+      text-align:center;
+      padding:60px 20px;
+      overflow:hidden;
+    }
+    .about-us .overlay {
+      position:absolute; top:0; left:0; width:100%; height:100%;
+      background-color: rgba(245,245,245,0.9); /* transparent overlay */
+      z-index:0;
+    }
+    .about-us .content { position:relative; z-index:1; max-width:1200px; margin:0 auto; }
+
+    .about-us h2 { font-size:2rem; color:#2e7d32; margin-bottom:10px; }
+    .about-us h3 { font-size:1.75rem; color:#0055a5; margin-bottom:20px; }
+    .about-us p { max-width:800px; margin:0 auto 40px auto; font-size:1.1rem; line-height:1.6; }
+
+    /* Boxes */
+    .info-boxes, .what-we-do { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-bottom:50px; }
+    .info-boxes div, .what-we-do div {
+      background-color:#ffffff; padding:30px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.2);
+      flex:1 1 250px; max-width:300px; text-align:left;
+    }
+    .info-boxes div { font-weight:bold; text-align:center; }
+    .what-we-do h4 { color:#2e7d32; margin-bottom:10px; }
+    .what-we-do p { font-size:1rem; line-height:1.5; }
+
+    /* Join the Blue Team Footer */
+    .join-blue { background-color:#0055a5; color:white; padding:50px 20px; border-radius:8px; text-align:center; max-width:900px; margin:0 auto 60px auto; }
+    .join-blue h3 { font-size:2rem; margin-bottom:20px; }
+    .join-blue p { font-size:1.1rem; line-height:1.6; margin-bottom:30px; }
+
+    /* Email box */
+    .email-box { max-width:400px; margin:0 auto; }
+    .email-box input[type="email"] {
+      padding:12px 15px; border:none; border-radius:5px; width:100%; margin-bottom:10px; font-size:1rem;
+    }
+    .email-box button {
+      padding:12px 20px; background-color:#2e7d32; color:white; border:none; border-radius:5px; font-size:1rem; cursor:pointer;
+    }
+    .email-box button:hover { background-color:#145214; }
+    #about-success-message { display:none; margin-top:15px; color:#ffff88; font-weight:bold; }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      .about-us h2 { font-size:1.6rem; }
+      .about-us h3 { font-size:1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="why-umpire.html">Why Umpire</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="board.html">Our Board</a></li>
+        <li><a href="test.html">Take the Test</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Us Section -->
+  <section class="about-us">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Umpiring in Columbia & Greene Counties Since 1956</h2>
+      <h3>Our Mission</h3>
+      <p>The Columbia Greene Umpires Association provides professional, qualified umpires for all levels of baseball in Columbia and Greene Counties. We are dedicated to maintaining the integrity of the game, ensuring fair play, and fostering a love of baseball in our communities.</p>
+
+      <!-- Four Info Boxes -->
+      <div class="info-boxes">
+        <div>Founded in 1956</div>
+        <div>Primarily serve 2 counties</div>
+        <div>70th anniversary in 2026</div>
+        <div>Cover all levels of baseball</div>
+      </div>
+
+      <!-- What We Do Boxes -->
+      <h3>What We Do</h3>
+      <div class="what-we-do">
+        <div>
+          <h4>Professional Umpiring</h4>
+          <p>We provide trained, certified umpires for youth leagues, high school games, travel baseball, and adult league baseball throughout Columbia & Greene Counties.</p>
+        </div>
+        <div>
+          <h4>Training & Development</h4>
+          <p>We offer comprehensive training courses and clinics for new umpires and continuing education to experienced umpires to maintain the highest level of quality.</p>
+        </div>
+        <div>
+          <h4>Community Service</h4>
+          <p>Our members are dedicated to giving back to the community by ensuring fair play and helping young athletes develop the love for the game.</p>
+        </div>
+        <div>
+          <h4>Rules & Standards</h4>
+          <p>We stay current with official baseball rules and regulations, ensuring consistent and accurate officiating across all the games we cover.</p>
+        </div>
+      </div>
+
+      <!-- Join the Blue Team Footer -->
+      <div class="join-blue">
+        <h3>Join the Blue Team!</h3>
+        <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to be a part of our proud tradition on the baseball diamond.
+          Whether you're an experienced umpire or just starting out, we want you to become part of the CGUA tradition!
+        </p>
+
+        <!-- Email Entry Box -->
+        <div class="email-box">
+          <form id="about-email-form" action="https://formspree.io/f/xkgknvjy" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Contact Us</button>
+          </form>
+          <p id="about-success-message">Thank you for contacting us!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    // Formspree submission
+    const aboutForm = document.getElementById('about-email-form');
+    const aboutSuccess = document.getElementById('about-success-message');
+
+    aboutForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(aboutForm);
+      const response = await fetch(aboutForm.action, {
+        method: aboutForm.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        aboutSuccess.style.display = 'block';
+        aboutForm.reset();
+      } else {
+        alert('Oops! There was a problem submitting your form.');
+      }
+    });
+  </script>
+
+</body>
+</html>

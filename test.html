@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take the Test - Columbia Greene Umpires Association</title>
+  <style>
+    /* Reset and basic styles */
+    * { box-sizing: border-box; margin:0; padding:0; font-family: Arial, sans-serif; }
+    body, html { height:100%; width:100%; }
+
+    /* Navigation Bar */
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 3;
+      background-color: rgba(0,0,0,0.7);
+    }
+    .navbar ul { list-style:none; display:flex; justify-content:center; gap:30px; padding:15px; }
+    .navbar a { color:white; text-decoration:none; font-weight:bold; font-size:1rem; }
+    .navbar a:hover { color:#ffff88; }
+
+    /* Take the Test Section */
+    .take-test {
+      position: relative;
+      background: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4NTU3MDI3LWltYWdlLWt3dnhtemE1LmpwZw.jpg') no-repeat center center/cover;
+      color:#333;
+      text-align:center;
+      padding:60px 20px;
+      overflow:hidden;
+    }
+    .take-test .overlay {
+      position:absolute; top:0; left:0; width:100%; height:100%;
+      background-color: rgba(245,245,245,0.9);
+      z-index:0;
+    }
+    .take-test .content { position:relative; z-index:1; max-width:1200px; margin:0 auto; }
+
+    .take-test h2 { font-size:2rem; color:#2e7d32; margin-bottom:10px; }
+    .take-test h3 { font-size:1.75rem; color:#0055a5; margin-bottom:20px; }
+    .take-test p { font-size:1.1rem; line-height:1.6; margin-bottom:30px; }
+
+    /* Steps */
+    .steps { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-bottom:50px; }
+    .step-card {
+      background-color:#ffffff; padding:25px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.2);
+      flex:1 1 250px; max-width:300px; text-align:center;
+    }
+    .step-card h4 { color:#2e7d32; margin-bottom:10px; }
+    .step-card p { font-size:1rem; line-height:1.5; }
+
+    /* Green box for test link */
+    .test-box {
+      background-color:#2e7d32;
+      color:white;
+      padding:40px 20px;
+      border-radius:8px;
+      text-align:center;
+      margin-bottom:40px;
+    }
+    .test-box a {
+      display:inline-block;
+      padding:15px 25px;
+      background-color:#ffff88;
+      color:#2e7d32;
+      font-weight:bold;
+      border-radius:5px;
+      text-decoration:none;
+      font-size:1.2rem;
+      transition: background-color 0.3s;
+    }
+    .test-box a:hover { background-color:#ffe066; }
+
+    /* Join the Blue Team Footer */
+    .join-blue { background-color:#0055a5; color:white; padding:50px 20px; border-radius:8px; text-align:center; max-width:900px; margin:0 auto 60px auto; }
+    .join-blue h3 { font-size:2rem; margin-bottom:20px; }
+    .join-blue p { font-size:1.1rem; line-height:1.6; margin-bottom:30px; }
+
+    /* Email box */
+    .email-box { max-width:400px; margin:0 auto; }
+    .email-box input[type="email"] {
+      padding:12px 15px; border:none; border-radius:5px; width:100%; margin-bottom:10px; font-size:1rem;
+    }
+    .email-box button {
+      padding:12px 20px; background-color:#2e7d32; color:white; border:none; border-radius:5px; font-size:1rem; cursor:pointer;
+    }
+    .email-box button:hover { background-color:#145214; }
+    #test-success-message { display:none; margin-top:15px; color:#ffff88; font-weight:bold; }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      .take-test h2 { font-size:1.6rem; }
+      .take-test h3 { font-size:1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="why-umpire.html">Why Umpire</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="board.html">Our Board</a></li>
+        <li><a href="test.html">Take the Test</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Take the Test Section -->
+  <section class="take-test">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Start Your Umpiring Journey</h2>
+      <h3>Are you ready to become an umpire?</h3>
+      <p>
+        Take the certification test at your own pace and start umpiring games whenever you are ready! 
+        The comprehensive exam covers rules, mechanics, and game management, and you can start umpiring as soon as you score 80%.
+      </p>
+      <p>
+        Don't hesitate to reach out to any board members with questions regarding the test or to request a rule book.
+      </p>
+
+      <!-- Three-Step Process -->
+      <div class="steps">
+        <div class="step-card">
+          <h4>Step 1: Register Online</h4>
+          <p>Create your account and sign up to take the certification test.</p>
+        </div>
+        <div class="step-card">
+          <h4>Step 2: Take the Test</h4>
+          <p>Complete the exam at your own pace via our testing platform.</p>
+        </div>
+        <div class="step-card">
+          <h4>Step 3: Start Umpiring</h4>
+          <p>Once you pass, begin officiating games and earning pay right away!</p>
+        </div>
+      </div>
+
+      <!-- Distinct Green Box for Test Link -->
+      <div class="test-box">
+        <h3>Take the Certification Test</h3>
+        <a href="https://learn.refreps.com/dashboard" target="_blank">Go to the Test</a>
+      </div>
+
+      <!-- Join the Blue Team Footer -->
+      <div class="join-blue">
+        <h3>Join the Blue Team!</h3>
+        <p>Are you ready to join the "blue" team on the diamond? Whether you're an experienced umpire or just starting out, we want you to become part of our proud CGUA tradition!</p>
+
+        <!-- Email Entry Box -->
+        <div class="email-box">
+          <form id="test-email-form" action="https://formspree.io/f/xkgknvjy" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Contact Us</button>
+          </form>
+          <p id="test-success-message">Thank you for contacting us!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    // Formspree submission for Test page
+    const testForm = document.getElementById('test-email-form');
+    const testSuccess = document.getElementById('test-success-message');
+
+    testForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(testForm);
+      const response = await fetch(testForm.action, {
+        method: testForm.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        testSuccess.style.display = 'block';
+        testForm.reset();
+      } else {
+        alert('Oops! There was a problem submitting your form.');
+      }
+    });
+  </script>
+
+</body>
+</html>
