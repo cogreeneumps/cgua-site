@@ -1,156 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Columbia Greene Umpires Association</title>
   <style>
-    /* Reset styles */
-    * {
-      box-sizing: border-box;
+    body {
       margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
+      background: url('images/baseball-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
     }
 
-    body, html {
-      height: 100%;
-      width: 100%;
-    }
-
-    /* Navigation Bar */
     header {
-      position: absolute;
-      top: 20px;
-      width: 100%;
-      z-index: 3;
+      background-color: rgba(0, 60, 0, 0.9);
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 30px;
+    nav ul li {
+      margin: 5px 15px;
     }
 
-    .navbar a {
+    nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1rem;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-      transition: color 0.3s ease;
+      transition: color 0.3s;
     }
 
-    .navbar a:hover {
-      color: #ffff88;
+    nav ul li a:hover {
+      color: #a8ffa8;
     }
 
-    /* Hero Section */
-    .hero {
-      position: relative;
-      /* Option 3 – Rawpixel baseball field */
-      background: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4NTU3MDI3LWltYWdlLWt3dnhtemE1LmpwZw.jpg') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #ffffff;
+    main {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 20px;
       text-align: center;
-      padding: 0 20px;
-      overflow: hidden;
     }
 
-    .hero .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* 50% dark overlay */
-      z-index: 1;
-    }
-
-    .hero .hero-content {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-    }
-
-    .hero p {
-      font-size: 1.25rem;
-      max-width: 700px;
-      margin-bottom: 30px;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-    }
-
-    .hero .email-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      max-width: 400px;
-    }
-
-    .hero input[type="email"] {
-      padding: 12px 15px;
-      border: none;
-      border-radius: 5px;
+    h2 {
+      color: #a8ffa8;
       margin-bottom: 10px;
-      width: 100%;
-      font-size: 1rem;
     }
 
-    .hero button {
-      padding: 12px 20px;
-      background-color: #0055a5; /* CGUA Blue */
-      color: white;
+    p {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .signup-box {
+      margin-top: 20px;
+    }
+
+    input[type="email"] {
+      padding: 10px;
       border: none;
       border-radius: 5px;
-      font-size: 1rem;
+      width: 250px;
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #a8ffa8;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .hero button:hover {
-      background-color: #003f7f;
-    }
-
-    #success-message {
-      display: none;
-      margin-top: 15px;
-      color: #ffff88;
       font-weight: bold;
+      transition: background-color 0.3s;
     }
 
-    /* Responsive text */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-      .hero p {
-        font-size: 1rem;
-      }
-      .navbar ul {
-        gap: 15px;
-      }
+    input[type="submit"]:hover {
+      background-color: #66ff66;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 60, 0.9);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer h2 {
+      color: #a8ffa8;
+    }
+
+    .social-icons {
+      margin: 15px 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
     }
   </style>
 </head>
 <body>
-
-  <!-- Navigation -->
   <header>
-    <nav class="navbar">
+    <h1>Columbia Greene Umpires Association</h1>
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -162,45 +136,40 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Columbia Greene Umpires Association</h1>
-      <p>Columbia Greene Umpires Association provides umpires for all levels of baseball in Columbia and Greene Counties. The organization has been serving our communities since 1956 and will celebrate its 70th anniversary in 2026!</p>
-      <p>Are you ready to join the "blue" team on the diamond?</p>
+  <main>
+    <h2>Columbia Greene Umpires Association</h2>
+    <p>Columbia Greene Umpires Association provides umpires for all levels of baseball in Columbia and Greene Counties.  
+       The organization has been serving our communities since 1956 and will celebrate its 70th anniversary in 2026!</p>
+    <p>Are you ready to join the "blue" team on the diamond?</p>
 
-      <div class="email-box">
-        <form id="signup-form" action="https://formspree.io/f/xkgknvjy" method="POST">
-          <input type="email" name="email" placeholder="Enter your email" required>
-          <button type="submit">Contact Us</button>
-        </form>
-        <p id="success-message">Thank you for contacting us!</p>
-      </div>
+    <div class="signup-box">
+      <form action="https://formspree.io/f/xkgknvjy" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="submit" value="Sign Up">
+      </form>
     </div>
-  </section>
+  </main>
 
-  <script>
-    // Formspree submission with success message
-    const form = document.getElementById('signup-form');
-    const successMessage = document.getElementById('success-message');
+  <footer>
+    <h2>Connect With Us</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/CGUAumpires/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/columbiagreeneumpires/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+    </div>
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
-      if (response.ok) {
-        successMessage.style.display = 'block';
-        form.reset();
-      } else {
-        alert('Oops! There was a problem submitting your form.');
-      }
-    });
-  </script>
+    <h2>Join the Blue Team!</h2>
+    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to be a part of our proud tradition on the baseball diamond.</p>
+    <p>Whether you're an experienced umpire or just starting out, we want you to become part of the CGUA tradition!</p>
 
+    <form action="https://formspree.io/f/xkgknvjy" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <input type="submit" value="Sign Up">
+    </form>
+  </footer>
 </body>
 </html>
+
