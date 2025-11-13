@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CGUA - Take the Test</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://i.imgur.com/6Z2W6vG.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      background-color: rgba(0, 60, 0, 0.9);
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 5px 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #a8ffa8;
+    }
+
+    main {
+      background-color: rgba(0,0,0,0.6);
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    h2, h3 {
+      color: #a8ffa8;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .step {
+      background-color: rgba(0,128,0,0.85);
+      flex: 1 1 30%;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,255,100,0.5);
+      font-weight: bold;
+    }
+
+    .test-link {
+      display: inline-block;
+      margin: 30px 0;
+      padding: 20px 30px;
+      background-color: #66ff66;
+      color: black;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,255,100,0.7);
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .test-link:hover {
+      transform: scale(1.05);
+      background-color: #a8ffa8;
+    }
+
+    footer {
+      background-color: rgba(0,0,60,0.9);
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    footer h2 {
+      color: #a8ffa8;
+    }
+
+    .social-icons {
+      margin: 15px 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 250px;
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #a8ffa8;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #66ff66;
+    }
+
+    @media (max-width: 700px) {
+      .steps {
+        flex-direction: column;
+        align-items: center;
+      }
+      .step {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Columbia Greene Umpires Association</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="why.html">Why Umpire</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="take-the-test.html">Take the Test</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Start Your Umpiring Journey</h2>
+    <p>Are you ready to become an umpire? Take the certification test at your own pace and start umpiring games whenever you are ready!  
+       The comprehensive exam covers rules, mechanics, and game management. You can start umpiring as soon as you score 80%!</p>
+    <p>Don't hesitate to reach out to any board members with questions regarding the test or to request a rule book.</p>
+
+    <div class="steps">
+      <div class="step">1. Register Online</div>
+      <div class="step">2. Take the Test</div>
+      <div class="step">3. Start Umpiring</div>
+    </div>
+
+    <a class="test-link" href="https://learn.refreps.com/dashboard" target="_blank">Take the Test Now!</a>
+  </main>
+
+  <footer>
+    <h2>Connect With Us</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/CGUAumpires/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/columbiagreeneumpires/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+    </div>
+
+    <h2>Join the Blue Team!</h2>
+    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to become part of our proud tradition.</p>
+
+    <form action="https://formspree.io/f/xkgknvjy" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <input type="submit" value="Sign Up">
+    </form>
+  </footer>
+</body>
+</html>
+
