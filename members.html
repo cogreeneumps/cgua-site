@@ -3,34 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CGUA Members</title>
+  <title>CGUA - Members</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: url('images/baseball-bg.jpg') no-repeat center center fixed;
+      font-family: Arial, sans-serif;
+      background: url('https://i.imgur.com/6Z2W6vG.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
 
     header {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 15px;
+      background-color: rgba(0, 60, 0, 0.9);
+      padding: 15px 0;
       text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
     }
 
     nav ul {
       list-style: none;
       padding: 0;
+      margin: 10px 0 0;
       display: flex;
       justify-content: center;
-      margin: 0;
-      background-color: rgba(0, 0, 0, 0.9);
+      flex-wrap: wrap;
     }
 
     nav ul li {
-      margin: 0 20px;
+      margin: 5px 15px;
     }
 
     nav ul li a {
@@ -41,80 +45,83 @@
     }
 
     nav ul li a:hover {
-      color: #00ff99;
-    }
-
-    /* 🔧 New link styling for readability */
-    a {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-
-    a:hover {
       color: #a8ffa8;
     }
 
-    .container {
+    main {
+      background-color: rgba(0,0,0,0.6);
       max-width: 900px;
       margin: 40px auto;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      border-radius: 10px;
+      padding: 40px 20px;
+      border-radius: 12px;
     }
 
-    h1 {
-      text-align: center;
-      color: #00ff99;
-      margin-bottom: 10px;
+    h2, h3 {
+      color: #a8ffa8;
+      margin-bottom: 15px;
     }
 
     p {
-      text-align: center;
-      margin-bottom: 40px;
+      line-height: 1.6;
+      margin-bottom: 25px;
     }
 
-    .board-section, .members-section {
-      margin-bottom: 40px;
-    }
-
-    .board-section h2, .members-section h2 {
-      border-bottom: 2px solid #00ff99;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-      color: #00ff99;
+    .board, .all-members {
+      margin-bottom: 30px;
     }
 
     .board-member {
-      background-color: rgba(0, 128, 0, 0.7);
-      padding: 10px;
+      background-color: rgba(0, 128, 0, 0.85);
+      padding: 15px;
+      margin: 10px 0;
       border-radius: 8px;
-      margin-bottom: 10px;
     }
 
-    .board-member strong {
-      color: white;
-      font-size: 1.1em;
+    .board-member span {
+      display: block;
+      color: #ffff99;
     }
 
-    .member-list {
+    .all-members ul {
       columns: 2;
-      column-gap: 40px;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      list-style: none;
+      padding: 0;
     }
 
-    .member-list p {
-      margin: 6px 0;
+    .all-members li {
+      margin-bottom: 8px;
     }
 
     footer {
-      background-color: rgba(0, 0, 0, 0.85);
-      padding: 30px;
+      background-color: rgba(0,0,60,0.9);
       text-align: center;
+      padding: 40px 20px;
       margin-top: 40px;
     }
 
-    footer h3 {
-      color: #00ff99;
-      margin-bottom: 10px;
+    footer h2 {
+      color: #a8ffa8;
+    }
+
+    .social-icons {
+      margin: 15px 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
     }
 
     input[type="email"] {
@@ -122,129 +129,125 @@
       border-radius: 5px;
       border: none;
       width: 250px;
+      margin-right: 10px;
     }
 
-    button {
-      padding: 10px 20px;
+    input[type="submit"] {
+      background-color: #a8ffa8;
       border: none;
-      background-color: #00ff99;
-      color: black;
+      padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
       font-weight: bold;
+      transition: background-color 0.3s;
     }
 
-    button:hover {
-      background-color: white;
-      color: black;
-    }
-
-    @media (max-width: 700px) {
-      .member-list {
-        columns: 1;
-      }
+    input[type="submit"]:hover {
+      background-color: #66ff66;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Columbia Greene Umpires Association</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="why.html">Why Umpire</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="take-the-test.html">Take the Test</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="why.html">Why Umpire?</a></li>
-      <li><a href="test.html">Take the Test</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="members.html">Members</a></li>
-    </ul>
-  </nav>
+  <main>
+    <h2>Our Board & Members</h2>
+    <p>Please feel free to reach out to any of our board members with questions or concerns. We're happy to connect regarding our organization and ways to support current members and recruit new members.</p>
 
-  <div class="container">
-    <h1>Our Members</h1>
-    <p>Please feel free to reach out to any of our board members with questions or concerns.  
-      We're all happy to connect about our organization, support current members,  
-      and help recruit new umpires!</p>
-
-    <div class="board-section">
-      <h2>Board Members</h2>
-
+    <div class="board">
+      <h3>Board Members</h3>
       <div class="board-member">
-        <strong>President:</strong> Jeffrey Holliday — 
-        <a href="mailto:holliday7998@verizon.net">holliday7998@verizon.net</a>
+        President: Jeffrey Holliday <span>holliday7998@verizon.net</span>
       </div>
-
       <div class="board-member">
-        <strong>Assigner:</strong> Sean Connors — 
-        <a href="mailto:sconnors24@yahoo.com">sconnors24@yahoo.com</a>
+        Assigner: Sean Connors <span>sconnors24@yahoo.com</span>
       </div>
-
       <div class="board-member">
-        <strong>Treasurer:</strong> Jon Halligan — 
-        <a href="mailto:jonathanhalligan64@yahoo.com">jonathanhalligan64@yahoo.com</a>
+        Treasurer: Jon Halligan <span>jonathanhalligan64@yahoo.com</span>
       </div>
-
       <div class="board-member">
-        <strong>Vice President:</strong> Garrett Montgomery — 
-        <a href="mailto:garmontgomery@gmail.com">garmontgomery@gmail.com</a>
+        Vice President: Garrett Montgomery <span>garmontgomery@gmail.com</span>
       </div>
     </div>
 
-    <div class="members-section">
-      <h2>Current Members</h2>
-      <div class="member-list">
-        <p>Barry Brown</p>
-        <p>Sean Connors</p>
-        <p>Jeff Etu</p>
-        <p>Todd Gardner</p>
-        <p>Jeff Gibeault</p>
-        <p>Alex Gryner</p>
-        <p>George Haberman</p>
-        <p>Daniel Hall</p>
-        <p>Rob Hall</p>
-        <p>Bill Hallenbeck</p>
-        <p>Jon Halligan</p>
-        <p>Jeffrey Holliday</p>
-        <p>Scott Holzhauer</p>
-        <p>Elliott Kennedy</p>
-        <p>Stu Kornberg</p>
-        <p>Frederic Mac Arthur</p>
-        <p>Nick Martin</p>
-        <p>Tim McCarthy</p>
-        <p>Galen McDonald</p>
-        <p>Joe Miller</p>
-        <p>Garrett Montgomery</p>
-        <p>Ivan Morales</p>
-        <p>Christopher Mozzillo</p>
-        <p>John Piddock</p>
-        <p>Paul Podmijersky</p>
-        <p>David Robinson</p>
-        <p>Jerry Shook</p>
-        <p>Brian Skelly</p>
-        <p>Barry Smith</p>
-        <p>Tracy Snow</p>
-        <p>Nolan Space</p>
-        <p>Randall Space</p>
-        <p>Dave Teator</p>
-        <p>Tony Terraciano</p>
-        <p>Luke Wagor</p>
-        <p>Bob Wheeler</p>
-        <p>Gerry Wheeler</p>
-        <p>Dennis Williams</p>
-        <p>Eddie Williams</p>
-        <p>Bill Zimmermann</p>
-      </div>
+    <div class="all-members">
+      <h3>All Current Members</h3>
+      <ul>
+        <li>Brown, Barry</li>
+        <li>Connors, Sean</li>
+        <li>Etu, Jeff</li>
+        <li>Gardner, Todd</li>
+        <li>Gibeault, Jeff</li>
+        <li>Gryner, Alex</li>
+        <li>Haberman, George</li>
+        <li>Hall, Daniel</li>
+        <li>Hall, Rob</li>
+        <li>Hallenbeck, Bill</li>
+        <li>Halligan, Jon</li>
+        <li>Holliday, Jeffrey</li>
+        <li>Holzhauer, Scott</li>
+        <li>Kennedy, Elliott</li>
+        <li>Kornberg, Stu</li>
+        <li>Mac Arthur, Frederic</li>
+        <li>Martin, Nick</li>
+        <li>McCarthy, Tim</li>
+        <li>McDonald, Galen</li>
+        <li>Miller, Joe</li>
+        <li>Montgomery, Garrett</li>
+        <li>Morales, Ivan</li>
+        <li>Mozzillo, Christopher</li>
+        <li>Piddock, John</li>
+        <li>Podmijersky, Paul</li>
+        <li>Robinson, David</li>
+        <li>Shook, Jerry</li>
+        <li>Skelly, Brian</li>
+        <li>Smith, Barry</li>
+        <li>Snow, Tracy</li>
+        <li>Space, Nolan</li>
+        <li>Space, Randall</li>
+        <li>Teator, Dave</li>
+        <li>Terraciano, Tony</li>
+        <li>Wagor, Luke</li>
+        <li>Wheeler, Bob</li>
+        <li>Wheeler, Gerry</li>
+        <li>Williams, Dennis</li>
+        <li>Williams, Eddie</li>
+        <li>Zimmermann, Bill</li>
+      </ul>
     </div>
-  </div>
+  </main>
 
   <footer>
-    <h3>Join Our Email List</h3>
-    <p>Stay updated on meetings, training, and local baseball opportunities.</p>
-    <form action="#" method="post">
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Sign Up</button>
+    <h2>Connect With Us</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/CGUAumpires/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/columbiagreeneumpires/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+    </div>
+
+    <h2>Join the Blue Team!</h2>
+    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to be part of our proud tradition.</p>
+
+    <form action="https://formspree.io/f/xkgknvjy" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <input type="submit" value="Sign Up">
     </form>
   </footer>
 </body>
 </html>
+
