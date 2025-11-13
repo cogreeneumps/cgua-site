@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CGUA - Photos</title>
   <style>
     body {
@@ -12,124 +12,56 @@
       background-size: cover;
       color: white;
     }
-
     header {
-      background-color: rgba(0, 60, 0, 0.9);
+      background-color: rgba(0,60,0,0.9);
       padding: 15px 0;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav ul li {
-      margin: 5px 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #a8ffa8;
-    }
-
+    header h1 { margin: 0; font-size: 2rem; }
+    nav ul { list-style:none; padding:0; margin:10px 0 0; display:flex; justify-content:center; flex-wrap:wrap;}
+    nav ul li { margin:5px 15px;}
+    nav ul li a { color:white; text-decoration:none; font-weight:bold; transition:color 0.3s;}
+    nav ul li a:hover { color:#a8ffa8; }
     main {
       background-color: rgba(0,0,0,0.6);
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 40px auto;
       padding: 40px 20px;
       border-radius: 12px;
-    }
-
-    h2 {
-      color: #a8ffa8;
       text-align: center;
-      margin-bottom: 30px;
     }
-
+    h2 { color:#a8ffa8; margin-bottom: 30px; }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
     }
-
     .gallery img {
       width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,255,100,0.5);
+      height: auto;
+      border-radius: 12px;
+      border: 3px solid #a8ffa8;
       transition: transform 0.3s;
     }
-
     .gallery img:hover {
       transform: scale(1.05);
+      border-color: #66ff66;
     }
-
     footer {
-      background-color: rgba(0,0,60,0.9);
+      background-color: rgba(0,0,60,0.7);
       text-align: center;
       padding: 40px 20px;
       margin-top: 40px;
     }
-
-    footer h2 {
-      color: #a8ffa8;
-    }
-
-    .social-icons {
-      margin: 15px 0;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      display: inline-block;
-      transition: transform 0.3s;
-    }
-
-    .social-icons img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
-
-    input[type="email"] {
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      width: 250px;
-      margin-right: 10px;
-    }
-
-    input[type="submit"] {
-      background-color: #a8ffa8;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #66ff66;
-    }
+    footer h2 { color:#a8ffa8; }
+    .social-icons { margin:15px 0; }
+    .social-icons a { margin:0 10px; display:inline-block; transition: transform 0.3s; }
+    .social-icons a img { width:40px; height:40px; filter: brightness(1.5); }
+    .social-icons a:hover { transform: scale(1.2); }
+    .email-box { margin-top: 20px; text-align:center; }
+    input[type="email"] { padding:10px; border-radius:5px; border:none; width:250px; margin-right:10px; }
+    input[type="submit"] { background-color:#a8ffa8; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold; transition: background-color 0.3s;}
+    input[type="submit"]:hover { background-color:#66ff66; }
   </style>
 </head>
 <body>
@@ -185,14 +117,16 @@
     </div>
 
     <h2>Join the Blue Team!</h2>
-    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to be part of our proud tradition.</p>
-
-    <form action="https://formspree.io/f/xkgknvjy" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <input type="submit" value="Sign Up">
-    </form>
+    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to become part of our proud tradition.</p>
+    <div class="email-box">
+      <form action="https://formspree.io/f/xkgknvjy" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="submit" value="Sign Up">
+      </form>
+    </div>
   </footer>
 </body>
 </html>
+
 
 
