@@ -1,149 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CGUA - Why Umpire</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('https://i.imgur.com/6Z2W6vG.jpg') no-repeat center center fixed;
+      background: url('images/baseball_field.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
-
     header {
-      background-color: rgba(0, 60, 0, 0.9);
+      background-color: rgba(0,60,0,0.9);
       padding: 15px 0;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav ul li {
-      margin: 5px 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #a8ffa8;
-    }
-
+    header h1 { margin: 0; font-size: 2rem; }
+    nav ul { list-style:none; padding:0; margin:10px 0 0; display:flex; justify-content:center; flex-wrap:wrap;}
+    nav ul li { margin:5px 15px;}
+    nav ul li a { color:white; text-decoration:none; font-weight:bold; transition:color 0.3s;}
+    nav ul li a:hover { color:#a8ffa8; }
     main {
       background-color: rgba(0,0,0,0.6);
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 40px 20px;
       border-radius: 12px;
     }
-
-    h2, h3 {
-      color: #a8ffa8;
-      margin-bottom: 15px;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 25px;
-    }
-
-    .boxes {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 30px;
-    }
-
-    .box {
-      background-color: rgba(0, 128, 0, 0.85);
-      flex: 1 1 45%;
-      margin: 10px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 255, 100, 0.5);
-      text-align: center;
-    }
-
+    h2 { color:#a8ffa8; text-align:center; margin-bottom:20px; }
+    .section { margin-bottom: 40px; }
+    .boxes { display:flex; flex-wrap:wrap; justify-content:space-around; margin-top:20px; }
+    .box { background-color: rgba(0,100,60,0.8); padding:20px; margin:10px; border-radius:12px; flex:1 1 250px; text-align:center; }
     footer {
-      background-color: rgba(0,0,60,0.9);
+      background-color: rgba(0,0,60,0.7);
       text-align: center;
       padding: 40px 20px;
       margin-top: 40px;
     }
-
-    footer h2 {
-      color: #a8ffa8;
-    }
-
-    .social-icons {
-      margin: 15px 0;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      display: inline-block;
-      transition: transform 0.3s;
-    }
-
-    .social-icons img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
-
-    input[type="email"] {
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      width: 250px;
-      margin-right: 10px;
-    }
-
-    input[type="submit"] {
-      background-color: #a8ffa8;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #66ff66;
-    }
-
-    @media (max-width: 700px) {
-      .boxes {
-        flex-direction: column;
-        align-items: center;
-      }
-      .box {
-        width: 80%;
-      }
-    }
+    footer h2 { color:#a8ffa8; }
+    .social-icons { margin:15px 0; }
+    .social-icons a { margin:0 10px; display:inline-block; transition: transform 0.3s; }
+    .social-icons a img { width:40px; height:40px; filter: brightness(1.5); }
+    .social-icons a:hover { transform: scale(1.2); }
+    .email-box { margin-top: 20px; text-align:center; }
+    input[type="email"] { padding:10px; border-radius:5px; border:none; width:250px; margin-right:10px; }
+    input[type="submit"] { background-color:#a8ffa8; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold; transition: background-color 0.3s;}
+    input[type="submit"]:hover { background-color:#66ff66; }
   </style>
 </head>
 <body>
@@ -163,21 +67,28 @@
 
   <main>
     <h2>Why Become an Umpire?</h2>
-    <p>Joining the Columbia Greene Umpires Association allows you to stay involved in baseball, give back to your community, and earn money while doing what you love. Flexible scheduling lets you work whenever you are available.</p>
+    <div class="section">
+      <p>Becoming a baseball umpire with the Columbia Greene Umpires Association is rewarding in so many ways. Whether you're experienced or just starting, joining the "blue team" allows you to stay active, give back to the community, and earn money doing what you love!</p>
+    </div>
 
-    <div class="boxes">
+    <div class="section boxes">
       <div class="box">
-        <strong>Flexible Schedule:</strong> Work games whenever you can and earn competitive pay.
+        <strong>Flexible Scheduling & Earnings:</strong>
+        <p>Work when you can and earn great pay—often in cash. Fit umpiring around your schedule and life commitments.</p>
       </div>
       <div class="box">
-        <strong>Give Back to the Community:</strong> Support youth and high school baseball while maintaining fair play.
+        <strong>Give Back to the Community:</strong>
+        <p>Stay involved in baseball, mentor young athletes, and ensure fair play in games across Columbia & Greene Counties.</p>
       </div>
       <div class="box">
-        <strong>Stay Active Outdoors:</strong> Enjoy being outside, staying fit, and participating in the game you love.
+        <strong>Be Outside & Active:</strong>
+        <p>Spend time on the field doing what you love, staying active, and contributing to the game while making money.</p>
       </div>
     </div>
 
-    <p>Don't hesitate to reach out to any board members with questions about umpiring or to request a rule book.</p>
+    <div class="section">
+      <p>Don't hesitate to reach out to any board members with questions regarding umpiring, training, or to request a rule book. We're happy to help you start your journey!</p>
+    </div>
   </main>
 
   <footer>
@@ -192,13 +103,15 @@
     </div>
 
     <h2>Join the Blue Team!</h2>
-    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to be part of our proud tradition.</p>
-
-    <form action="https://formspree.io/f/xkgknvjy" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <input type="submit" value="Sign Up">
-    </form>
+    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to become part of our proud tradition.</p>
+    <div class="email-box">
+      <form action="https://formspree.io/f/xkgknvjy" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="submit" value="Sign Up">
+      </form>
+    </div>
   </footer>
 </body>
 </html>
+
 
