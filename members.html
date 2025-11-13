@@ -1,150 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CGUA - Members</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('https://i.imgur.com/6Z2W6vG.jpg') no-repeat center center fixed;
+      background: url('images/baseball_field.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
-
     header {
-      background-color: rgba(0, 60, 0, 0.9);
+      background-color: rgba(0,60,0,0.9);
       padding: 15px 0;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav ul li {
-      margin: 5px 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #a8ffa8;
-    }
-
+    header h1 { margin: 0; font-size: 2rem; }
+    nav ul { list-style:none; padding:0; margin:10px 0 0; display:flex; justify-content:center; flex-wrap:wrap;}
+    nav ul li { margin:5px 15px;}
+    nav ul li a { color:white; text-decoration:none; font-weight:bold; transition:color 0.3s;}
+    nav ul li a:hover { color:#a8ffa8; }
     main {
       background-color: rgba(0,0,0,0.6);
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 40px 20px;
       border-radius: 12px;
     }
-
-    h2, h3 {
-      color: #a8ffa8;
-      margin-bottom: 15px;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 25px;
-    }
-
-    .board, .all-members {
-      margin-bottom: 30px;
-    }
-
-    .board-member {
-      background-color: rgba(0, 128, 0, 0.85);
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-    }
-
-    .board-member span {
-      display: block;
-      color: #ffff99;
-    }
-
-    .all-members ul {
-      columns: 2;
-      -webkit-columns: 2;
-      -moz-columns: 2;
-      list-style: none;
-      padding: 0;
-    }
-
-    .all-members li {
-      margin-bottom: 8px;
-    }
-
+    h2 { color:#a8ffa8; text-align:center; margin-bottom:30px; }
+    .board, .members { margin-bottom: 40px; }
+    .board h3, .members h3 { color:#66ff66; margin-bottom:15px; }
+    .board ul, .members ul { list-style:none; padding:0; margin:0; }
+    .board li, .members li { margin-bottom:8px; font-size:1rem; }
+    .board a { color:#ffff99; text-decoration:none; }
+    .board a:hover { text-decoration:underline; }
     footer {
-      background-color: rgba(0,0,60,0.9);
+      background-color: rgba(0,0,60,0.7);
       text-align: center;
       padding: 40px 20px;
       margin-top: 40px;
     }
-
-    footer h2 {
-      color: #a8ffa8;
-    }
-
-    .social-icons {
-      margin: 15px 0;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      display: inline-block;
-      transition: transform 0.3s;
-    }
-
-    .social-icons img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
-
-    input[type="email"] {
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      width: 250px;
-      margin-right: 10px;
-    }
-
-    input[type="submit"] {
-      background-color: #a8ffa8;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #66ff66;
-    }
+    footer h2 { color:#a8ffa8; }
+    .social-icons { margin:15px 0; }
+    .social-icons a { margin:0 10px; display:inline-block; transition: transform 0.3s; }
+    .social-icons a img { width:40px; height:40px; filter: brightness(1.5); }
+    .social-icons a:hover { transform: scale(1.2); }
+    .email-box { margin-top: 20px; text-align:center; }
+    input[type="email"] { padding:10px; border-radius:5px; border:none; width:250px; margin-right:10px; }
+    input[type="submit"] { background-color:#a8ffa8; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold; transition: background-color 0.3s;}
+    input[type="submit"]:hover { background-color:#66ff66; }
   </style>
 </head>
 <body>
@@ -163,27 +69,21 @@
   </header>
 
   <main>
-    <h2>Our Board & Members</h2>
-    <p>Please feel free to reach out to any of our board members with questions or concerns. We're happy to connect regarding our organization and ways to support current members and recruit new members.</p>
+    <h2>Meet Our Members</h2>
 
     <div class="board">
       <h3>Board Members</h3>
-      <div class="board-member">
-        President: Jeffrey Holliday <span>holliday7998@verizon.net</span>
-      </div>
-      <div class="board-member">
-        Assigner: Sean Connors <span>sconnors24@yahoo.com</span>
-      </div>
-      <div class="board-member">
-        Treasurer: Jon Halligan <span>jonathanhalligan64@yahoo.com</span>
-      </div>
-      <div class="board-member">
-        Vice President: Garrett Montgomery <span>garmontgomery@gmail.com</span>
-      </div>
+      <p>Please feel free to reach out to any of our board members with questions or concerns. We're happy to connect regarding our organization and ways to support current members or recruit new members.</p>
+      <ul>
+        <li>President: <a href="mailto:holliday7998@verizon.net">Jeffrey Holliday</a></li>
+        <li>Assigner: <a href="mailto:sconnors24@yahoo.com">Sean Connors</a></li>
+        <li>Treasurer: <a href="mailto:jonathanhalligan64@yahoo.com">Jon Halligan</a></li>
+        <li>Vice President: <a href="mailto:garmontgomery@gmail.com">Garrett Montgomery</a></li>
+      </ul>
     </div>
 
-    <div class="all-members">
-      <h3>All Current Members</h3>
+    <div class="members">
+      <h3>Current Members</h3>
       <ul>
         <li>Brown, Barry</li>
         <li>Connors, Sean</li>
@@ -241,12 +141,13 @@
     </div>
 
     <h2>Join the Blue Team!</h2>
-    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to be part of our proud tradition.</p>
-
-    <form action="https://formspree.io/f/xkgknvjy" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <input type="submit" value="Sign Up">
-    </form>
+    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to become part of our proud tradition.</p>
+    <div class="email-box">
+      <form action="https://formspree.io/f/xkgknvjy" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="submit" value="Sign Up">
+      </form>
+    </div>
   </footer>
 </body>
 </html>
