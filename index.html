@@ -3,122 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Columbia Greene Umpires Association</title>
+  <title>CGUA - Home</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('https://i.imgur.com/6Z2W6vG.jpg') no-repeat center center fixed;
+      background: url('images/baseball_field.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
-
     header {
-      background-color: rgba(0, 60, 0, 0.9);
+      background-color: rgba(0,60,0,0.9);
       padding: 15px 0;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav ul li {
-      margin: 5px 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #a8ffa8;
-    }
-
+    header h1 { margin: 0; font-size: 2rem; }
+    nav ul { list-style:none; padding:0; margin:10px 0 0; display:flex; justify-content:center; flex-wrap:wrap;}
+    nav ul li { margin:5px 15px;}
+    nav ul li a { color:white; text-decoration:none; font-weight:bold; transition:color 0.3s;}
+    nav ul li a:hover { color:#a8ffa8; }
     main {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0,0,0,0.6);
+      max-width: 900px;
+      margin: 40px auto;
       padding: 40px 20px;
+      border-radius: 12px;
       text-align: center;
     }
-
-    h2 {
-      color: #a8ffa8;
-      margin-bottom: 10px;
-    }
-
-    p {
-      max-width: 800px;
-      margin: 0 auto 40px;
-      line-height: 1.6;
-    }
-
-    .signup-box {
-      margin-top: 20px;
-    }
-
-    input[type="email"] {
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      width: 250px;
-      margin-right: 10px;
-    }
-
-    input[type="submit"] {
-      background-color: #a8ffa8;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #66ff66;
-    }
-
-    footer {
-      background-color: rgba(0, 0, 60, 0.9);
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    footer h2 {
-      color: #a8ffa8;
-    }
-
-    .social-icons {
-      margin: 15px 0;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      display: inline-block;
-      transition: transform 0.3s;
-    }
-
-    .social-icons img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
+    h2 { color:#a8ffa8; margin-bottom:20px; }
+    p { line-height:1.6; margin-bottom:25px; }
+    .email-box { margin-top: 20px; }
+    input[type="email"] { padding:10px; border-radius:5px; border:none; width:250px; margin-right:10px; }
+    input[type="submit"] { background-color:#a8ffa8; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold; transition: background-color 0.3s;}
+    input[type="submit"]:hover { background-color:#66ff66;}
+    footer { background-color: rgba(0,0,60,0.9); text-align:center; padding:40px 20px; margin-top:40px;}
+    footer h2 { color:#a8ffa8; }
+    .social-icons { margin:15px 0; }
+    .social-icons a { margin:0 10px; display:inline-block; transition: transform 0.3s; }
+    .social-icons img { width:40px; height:40px; }
+    .social-icons a:hover { transform: scale(1.2); }
   </style>
 </head>
 <body>
@@ -138,11 +61,9 @@
 
   <main>
     <h2>Columbia Greene Umpires Association</h2>
-    <p>Columbia Greene Umpires Association provides umpires for all levels of baseball in Columbia and Greene Counties.  
-       The organization has been serving our communities since 1956 and will celebrate its 70th anniversary in 2026!</p>
+    <p>Columbia Greene Umpires Association provides umpires for all levels of baseball in Columbia and Greene Counties. The organization has been serving our communities since 1956 and will celebrate its 70th anniversary in 2026!</p>
     <p>Are you ready to join the "blue" team on the diamond?</p>
-
-    <div class="signup-box">
+    <div class="email-box">
       <form action="https://formspree.io/f/xkgknvjy" method="POST">
         <input type="email" name="email" placeholder="Enter your email" required>
         <input type="submit" value="Sign Up">
@@ -160,11 +81,8 @@
         <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
       </a>
     </div>
-
     <h2>Join the Blue Team!</h2>
-    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to be a part of our proud tradition on the baseball diamond.</p>
-    <p>Whether you're an experienced umpire or just starting out, we want you to become part of the CGUA tradition!</p>
-
+    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to become part of our proud tradition.</p>
     <form action="https://formspree.io/f/xkgknvjy" method="POST">
       <input type="email" name="email" placeholder="Enter your email" required>
       <input type="submit" value="Sign Up">
@@ -172,5 +90,6 @@
   </footer>
 </body>
 </html>
+
 
 
