@@ -1,149 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CGUA - About Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGUA - About</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('https://i.imgur.com/6Z2W6vG.jpg') no-repeat center center fixed;
+      background: url('images/baseball_field.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
-
     header {
-      background-color: rgba(0, 60, 0, 0.9);
+      background-color: rgba(0,60,0,0.9);
       padding: 15px 0;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav ul li {
-      margin: 5px 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #a8ffa8;
-    }
-
+    header h1 { margin: 0; font-size: 2rem; }
+    nav ul { list-style:none; padding:0; margin:10px 0 0; display:flex; justify-content:center; flex-wrap:wrap;}
+    nav ul li { margin:5px 15px;}
+    nav ul li a { color:white; text-decoration:none; font-weight:bold; transition:color 0.3s;}
+    nav ul li a:hover { color:#a8ffa8; }
     main {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 40px 20px;
-      max-width: 900px;
+      background-color: rgba(0,0,0,0.6);
+      max-width: 1000px;
       margin: 40px auto;
+      padding: 40px 20px;
       border-radius: 12px;
     }
-
-    h2, h3 {
-      color: #a8ffa8;
-      margin-bottom: 15px;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 25px;
-    }
-
-    .boxes {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 30px;
-    }
-
-    .box {
-      background-color: rgba(0, 128, 0, 0.85);
-      flex: 1 1 45%;
-      margin: 10px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 255, 100, 0.5);
-      text-align: center;
-    }
-
+    h2 { color:#a8ffa8; text-align:center; margin-bottom:20px; }
+    .section { margin-bottom: 40px; }
+    .section h3 { color:#66ff66; margin-bottom:15px; text-align:center; }
+    .boxes { display:flex; flex-wrap:wrap; justify-content:space-around; margin-top:20px; }
+    .box { background-color: rgba(0,100,60,0.8); padding:20px; margin:10px; border-radius:12px; flex:1 1 200px; text-align:center; }
     footer {
-      background-color: rgba(0, 0, 60, 0.9);
+      background-color: rgba(0,0,60,0.7);
       text-align: center;
       padding: 40px 20px;
       margin-top: 40px;
     }
-
-    footer h2 {
-      color: #a8ffa8;
-    }
-
-    .social-icons {
-      margin: 15px 0;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      display: inline-block;
-      transition: transform 0.3s;
-    }
-
-    .social-icons img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
-
-    input[type="email"] {
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      width: 250px;
-      margin-right: 10px;
-    }
-
-    input[type="submit"] {
-      background-color: #a8ffa8;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #66ff66;
-    }
-
-    @media (max-width: 700px) {
-      .boxes {
-        flex-direction: column;
-        align-items: center;
-      }
-      .box {
-        width: 80%;
-      }
-    }
+    footer h2 { color:#a8ffa8; }
+    .social-icons { margin:15px 0; }
+    .social-icons a { margin:0 10px; display:inline-block; transition: transform 0.3s; }
+    .social-icons a img { width:40px; height:40px; filter: brightness(1.5); }
+    .social-icons a:hover { transform: scale(1.2); }
+    .email-box { margin-top: 20px; text-align:center; }
+    input[type="email"] { padding:10px; border-radius:5px; border:none; width:250px; margin-right:10px; }
+    input[type="submit"] { background-color:#a8ffa8; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold; transition: background-color 0.3s;}
+    input[type="submit"]:hover { background-color:#66ff66; }
   </style>
 </head>
 <body>
@@ -162,31 +67,38 @@
   </header>
 
   <main>
-    <h2>Umpiring in Columbia & Greene Counties Since 1956</h2>
-    <h3>Our Mission</h3>
-    <p>The Columbia Greene Umpires Association provides professional, qualified umpires for all levels of baseball in Columbia and Greene Counties.  
-       We are dedicated to maintaining the integrity of the game, ensuring fair play, and fostering a love of baseball in our communities.</p>
+    <div class="section">
+      <h2>Umpiring in Columbia & Greene Counties Since 1956</h2>
+      <h3>Our Mission</h3>
+      <p>The Columbia Greene Umpires Association provides professional, qualified umpires for all levels of baseball in Columbia and Greene Counties. We are dedicated to maintaining the integrity of the game, ensuring fair play, and fostering a love of baseball in our communities.</p>
+    </div>
 
-    <div class="boxes">
+    <div class="section boxes">
       <div class="box">Founded in 1956</div>
       <div class="box">Primarily serve 2 counties</div>
       <div class="box">70th anniversary in 2026</div>
       <div class="box">Cover all levels of baseball</div>
     </div>
 
-    <h3>What We Do</h3>
-    <div class="boxes">
-      <div class="box">
-        <strong>Professional Umpiring:</strong> Trained, certified umpires for youth leagues, high school, travel, and adult baseball.
-      </div>
-      <div class="box">
-        <strong>Training & Development:</strong> Courses and clinics for new umpires and continuing education for experienced umpires.
-      </div>
-      <div class="box">
-        <strong>Community Service:</strong> Giving back by ensuring fair play and helping young athletes love the game.
-      </div>
-      <div class="box">
-        <strong>Rules & Standards:</strong> Staying current with official baseball rules to ensure consistent officiating.
+    <div class="section">
+      <h3>What We Do</h3>
+      <div class="boxes">
+        <div class="box">
+          <strong>Professional Umpiring:</strong>
+          <p>We provide trained, certified umpires for youth leagues, high school games, travel baseball, and adult league baseball throughout Columbia & Greene Counties.</p>
+        </div>
+        <div class="box">
+          <strong>Training & Development:</strong>
+          <p>We offer comprehensive training courses and clinics for new umpires and continuing education to experienced umpires to maintain the highest level of quality.</p>
+        </div>
+        <div class="box">
+          <strong>Community Service:</strong>
+          <p>Our members are dedicated to giving back to the community by ensuring fair play and helping young athletes develop the love for the game.</p>
+        </div>
+        <div class="box">
+          <strong>Rules & Standards:</strong>
+          <p>We stay current with official baseball rules and regulations, ensuring consistent and accurate officiating across all the games we cover.</p>
+        </div>
       </div>
     </div>
   </main>
@@ -203,13 +115,13 @@
     </div>
 
     <h2>Join the Blue Team!</h2>
-    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to be a part of our proud tradition on the baseball diamond.</p>
-    <p>Whether you're an experienced umpire or just starting out, we want you to become part of the CGUA tradition!</p>
-
-    <form action="https://formspree.io/f/xkgknvjy" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <input type="submit" value="Sign Up">
-    </form>
+    <p>Are you ready to join the "blue" team on the diamond? We're always looking for dedicated individuals who want to become part of our proud tradition.</p>
+    <div class="email-box">
+      <form action="https://formspree.io/f/xkgknvjy" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="submit" value="Sign Up">
+      </form>
+    </div>
   </footer>
 </body>
 </html>
